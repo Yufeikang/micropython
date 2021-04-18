@@ -36,7 +36,7 @@ This is a port of MicroPython to the Nordic Semiconductor nRF series of chips.
   * [Arduino Primo](http://www.arduino.org/products/boards/arduino-primo)
   * [IBK-BLYST-NANO breakout board](https://www.crowdsupply.com/i-syst/blyst-nano)
   * [BLUEIO-TAG-EVIM BLYST Nano Sensor board](https://www.crowdsupply.com/i-syst/blyst-nano)
-  * [EByte E73-TBB (E73-2G4M04S1B)](https://www.ebyte.com/en/product-view-news.html?id=889)
+  * [Ebyte E73-TBB (E73-2G4M04S1B)](https://www.ebyte.com/en/product-view-news.html?id=889)
 * nRF52840
   * [PCA10056](http://www.nordicsemi.com/eng/Products/nRF52840-Preview-DK)
 
