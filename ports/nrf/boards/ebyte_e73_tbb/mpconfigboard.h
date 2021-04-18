@@ -24,7 +24,11 @@
  * THE SOFTWARE.
  */
 
-#define MICROPY_HW_BOARD_NAME       "E73-Demo"
+// E73-TBB is a test board:
+// https://www.ebyte.com/en/product-view-news.html?id=889
+// For the E73-2G4M04S1B module:
+// https://www.ebyte.com/en/product-view-news.html?id=243
+#define MICROPY_HW_BOARD_NAME       "Ebyte-E73-TBB"
 #define MICROPY_HW_MCU_NAME         "NRF52832"
 #define MICROPY_PY_SYS_PLATFORM     "nrf52-DK"
 
@@ -36,7 +40,7 @@
 #define MICROPY_PY_MACHINE_I2C      (1)
 #define MICROPY_PY_MACHINE_ADC      (1)
 #define MICROPY_PY_MACHINE_TEMP     (1)
-#define MICROPY_PY_RANDOM_HW_RNG    (1)
+#define MICROPY_HW_ENABLE_RNG       (1)
 
 #define MICROPY_HW_HAS_LED          (1)
 #define MICROPY_HW_LED_COUNT        (2)
@@ -45,10 +49,17 @@
 #define MICROPY_HW_LED1             (17) // LED1
 #define MICROPY_HW_LED2             (18) // LED2
 
+// Switch 1 = P0.14 active low
+// Switch 2 = P0.13 active low
+
+// NFC ant 1 = P0.09
+// NFC ant 2 = P0.10
 
 // UART config
 #define MICROPY_HW_UART1_RX         (8)
 #define MICROPY_HW_UART1_TX         (6)
+#define MICROPY_HW_UART1_CTS        (7)
+#define MICROPY_HW_UART1_RTS        (5)
 #define MICROPY_HW_UART1_HWFC       (0)
 
 // SPI0 config
